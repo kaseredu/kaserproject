@@ -1,0 +1,81 @@
+body {
+	overflow: hidden;
+}
+#headercontainer {
+	height: 150px;
+}
+
+#logocontainer {
+	background-color: #4683D8;
+}
+
+#logocontainer img {
+	height: 100%;
+	display: block;
+	margin: auto;
+}
+
+#starofthedaycontainer {
+	margin: : 0% 0.5%;
+}
+
+#starofthedaycontainer div{
+	background-color: #3D2C6B;
+}
+
+#starofthedaycontainer img {
+	display: block;
+	margin: auto;
+	height: 100%;
+}
+
+#starofthedaydetailcontainer {
+	background-color: #3D2C6B;
+	display: block;
+	height: 100%;
+}
+
+#starofthedaydetailcontainer div{
+	color: black;
+	background-color: green;
+	display: inline-block;
+	margin: auto;
+}
+
+#navigationbar {
+	display: inline-block;
+	border: 0px solid white;
+	height: 60%;
+}
+#navigationbarcontainer ul li a{
+	color: black;
+}
+
+#navigationbarcontainer ul li > a:hover{
+	color: yellow;
+}
+
+.title {
+	background-color: #4683D8;
+	padding: 0.5%;
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+	color: black;
+	text-transform: uppercase;
+}
+
+#contentcontainer {
+	padding: 1%;
+	border-bottom: 10px solid black;
+}
+
+#footer {
+	height: 200px;
+	background-color: grey;
+}
+
+#copyrightcontainer {
+	height: 50px;
+	background-color: black;
+}
