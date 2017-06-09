@@ -2,73 +2,50 @@
 
 <head>
 <title>KASER</title>
-<!-- include css file -->
-<link rel="stylesheet" type="text/css" href="index.css">
-<!-- bootstrap link -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 
 <body>
 
-<div id="headercontainer" class="row">
-	<!-- a width is 12 column -->
-	<!-- logo here -->
-	<div id="logocontainer" class="col-md-3">
-		<img src="image/index/logo.png">
-	</div>
+<div class="container-fluid">
+  <div id="headercontainer" class="row">
+  	<div w3-include-html="header.html"></div>
+  </div>
 
-	<!-- star of the day image here -->
-	<div id="starofthedaycontainer" class="col-md-6 col-xs-12">
-		<div>
-			<img src="image/person1.png">
-		</div>
-	</div>
+  <div id = "contentcontainer" class="row">
 
-	<!-- star of the day detail here -->
-	<div id="starofthedaydetailcontainer" class="col-md-3 col-xs-12">
-		<div>
-			<h4>Top Selected Live Learning Broadcast</h4>
-			<h4>Class Title:</h4>
-			<h4>Conducted by:</h4>
-		</div>
-	</div>
+  		<!-- navigation bar frame -->
+  		<div class="col-md-3 col-xs-12">
+  			<div w3-include-html="navigationbar.html"></div>
+  		</div>
+
+  		<!-- categories item here -->
+  		<div id="categoriescontainer" class="col-md-6 col-xs-12">
+  			<div class="title">Categories</div>
+  			<div id="categorieslist">
+
+  			</div>
+  			<div class="title">Live Broadcast</div>
+  			<div id="livebroadcastlist"></div>
+  		</div>
+
+  		<!-- advertisement here -->
+  		<div id="advertisementcontainer" class="col-md-3 col-xs-12">
+  			<div class="title">Advertisement</div>
+  			<div id="advertisementlist"></div>
+  		</div>
+  </div>
+
+  <div id="chatcontainer" class="row nopadding">
+  	<div w3-include-html="chatbox.html"></div>
+  </div>
+
+  <div id="footercontainer" class="row">
+  	<div w3-include-html="footer.html"></div>
+  </div>
 </div>
-
-<div id = "contentcontainer" class="row">
-		<!-- navigation bar frame -->
-		<div class="col-md-3">
-			<iframe id="navigationbar" src="navigationbar.html"></iframe>
-		</div>
-
-		<!-- categories item here -->
-		<div id="categoriescontainer" class="col-md-6">
-			<div class="title">Categories</div>
-			<div id="categorieslist">
-
-			</div>
-			<div class="title">Live Broadcast</div>
-			<div id="livebroadcastlist"></div>
-		</div>
-
-		<!-- advertisement here -->
-		<div id="advertisementcontainer" class="col-md-3">
-			<div class="title">Advertisement</div>
-			<div id="advertisementlist"></div>
-		</div>
-</div>
-
-<div id="chatcontainer">
-
-</div>
-
-<div id="footercontainer" class="row">
-	<div id="footer">
-
-	</div>
-	<div id="copyrightcontainer">
-
-	</div>
-</div>
-
+<script>
+	w3.includeHTML();
+</script>
 </body>
 </html>

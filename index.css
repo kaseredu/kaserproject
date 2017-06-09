@@ -1,8 +1,6 @@
-body {
-	overflow: hidden;
-}
 #headercontainer {
-	height: 150px;
+	height: 100px;
+	overflow: hidden;
 }
 
 #logocontainer {
@@ -16,7 +14,8 @@ body {
 }
 
 #starofthedaycontainer {
-	margin: : 0% 0.5%;
+	border-left: 10px solid white;
+	border-right: 10px solid white;
 }
 
 #starofthedaycontainer div{
@@ -30,23 +29,17 @@ body {
 }
 
 #starofthedaydetailcontainer {
-	background-color: #3D2C6B;
-	display: block;
-	height: 100%;
-}
-
-#starofthedaydetailcontainer div{
-	color: black;
 	background-color: green;
-	display: inline-block;
-	margin: auto;
+	border: 5px solid #3D2C6B;
+	height: 100%;
 }
 
 #navigationbar {
 	display: inline-block;
 	border: 0px solid white;
-	height: 60%;
+	height: 100%;
 }
+
 #navigationbarcontainer ul li a{
 	color: black;
 }
@@ -55,9 +48,12 @@ body {
 	color: yellow;
 }
 
+#navigationbarcontainer ul ul li {
+	list-style-type: circle;
+}
+
 .title {
 	background-color: #4683D8;
-	padding: 0.5%;
 	display: inline-block;
 	text-align: center;
 	font-weight: bold;
@@ -66,8 +62,31 @@ body {
 }
 
 #contentcontainer {
-	padding: 1%;
-	border-bottom: 10px solid black;
+	padding-top: 1%;
+	border-bottom: 5px solid black;
+}
+
+#chatcontainer {
+	height: 30%;
+}
+
+#chatcontainer div{
+		background-color: green;
+}
+
+#chatcontainer input{
+	width: 100%;
+}
+
+#messages {
+	overflow: scroll;
+	height: 91%;
+}
+
+#chatroom {
+	background-color: green;
+	height: 100%;
+	overflow: scroll;
 }
 
 #footer {
@@ -78,4 +97,9 @@ body {
 #copyrightcontainer {
 	height: 50px;
 	background-color: black;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
 }
